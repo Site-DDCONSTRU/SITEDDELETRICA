@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@100;200;300;400;500;600;700;800 & display=swap');
+
+:root{
+    --verdeprincipal: #0D8434;
+    --laranjaprincipal: #dfa832;
+
+    --fonteprincipal: 'Inter', sans-serif;
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--verdeprincipal);
+}
+
+/*------------SCROLLBAR------------*/
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--laranjaprincipal);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--verdeprincipal);
+    border-radius: 50px;
+}
+
+/*------------NAVBAR------------*/
+
+header{
+    position: sticky;
+    top: 0;
+    height: 100px;
+    padding: 0 40px;
+    background-color: var(--verdeprincipal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.img{
+    background-color: white;
+    height: 150px;
+    width: 160px;
+    border-radius: 0 0 10px 10px;
+}
+
+.img img{
+    position: relative;
+    left: 50%;
+    top: 56%;
+    transform: translate(-50%, -50%);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    font-weight: 200;
+    transition: .6s;
+}
+
+a:hover{
+    color: var(--laranjaprincipal);
+}
+
+a.home{
+    color: var(--laranjaprincipal);
+}
+
+a.home:hover{
+    color: #facf63;
+    text-shadow: 0 0 12px var(--laranjaprincipal);
+}
+
+/*------------CONTEINER-01------------*/
+
+section.page1{
+    height: 590px;
+    background-image: url(logo/vecteezy_solar-panel-cell-on-sunset-sky-background-clean-alternative-power-energy-concept_1235998\ 1.jpg);
+    background-color: var(--verdeprincipal);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.foto-principal img{
+    min-width: 400px;
+    width: 35vw;
+}
+
+.text-principal{
+    width: 500px;
+    
+}
+
+.text-principal h1{
+    min-width: 50vw;
+    max-width: 560px;
+    color: var(--laranjaprincipal);
+    font-size: 46px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.text-principal p{
+    max-width: 49vw;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.botão button{
+    width: 302px;
+    height: 44px;
+    color: var(--verdeprincipal);
+    background-color: var(--laranjaprincipal);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    border: 0;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+.botão button:hover{
+    cursor: pointer;
+    background-color: var(--verdeprincipal);
+    color: var(--laranjaprincipal);    
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--laranjaprincipal);
+}
+
+
+
+/*------------CONTEINER-02------------*/
+
+section.page2{
+    height: 196px;
+    background-color: var(--laranjaprincipal);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.seção1{
+    min-width: 300px;
+    width: 30vw;
+    height: 139px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: .8rem;
+}
+
+.seção1 p{
+    width: 260px;
+    font-size: 19px;
+    color: var(--verdeprincipal);
+}
+
+.seção2{
+    min-width: 300px;
+    width: 30vw;
+    height: 139px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: .8rem;
+}
+
+.seção2 p{
+    width: 260px;
+    font-size: 19px;
+    color: var(--verdeprincipal);
+}
+
+
+
