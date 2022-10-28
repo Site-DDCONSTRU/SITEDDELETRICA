@@ -102,8 +102,7 @@ section.page1{
     background-attachment: fixed;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 250px;
+    justify-content: space-between;
     padding: 0 40px;
 }
 
