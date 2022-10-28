@@ -102,13 +102,13 @@ section.page1{
     background-attachment: fixed;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 250px;
     padding: 0 40px;
 }
 
 .foto-principal img{
-    min-width: 400px;
-    width: 35vw;
+    width: 500px;
 }
 
 .text-principal{
