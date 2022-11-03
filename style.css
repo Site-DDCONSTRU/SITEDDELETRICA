@@ -2,13 +2,14 @@
 
 :root{
     --verdeprincipal: #0D8434;
-    --laranjaprincipal: #dfa832;
+    --verdesecundario: #008528;
+    --laranjaprincipal:  #F1AA1C;
 
     --fonteprincipal: 'Inter', sans-serif;
 }
 
 *{
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonteprincipal);
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -39,6 +40,7 @@ body{
 header{
     position: sticky;
     top: 0;
+    z-index: 1;
     height: 100px;
     padding: 0 40px;
     background-color: var(--verdeprincipal);
@@ -92,7 +94,7 @@ a.home:hover{
 
 /*------------CONTEINER-01------------*/
 
-section.page1{
+section.conteiner-01{
     height: 590px;
     background-image: url(logo/vecteezy_solar-panel-cell-on-sunset-sky-background-clean-alternative-power-energy-concept_1235998\ 1.jpg);
     background-color: var(--verdeprincipal);
@@ -100,14 +102,21 @@ section.page1{
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+}
+
+.page1{ 
+    max-width: 1600px;
+    min-width: 500px;
     display: flex;
     align-items: center;
-    justify-content: space-between ;
-    padding: 0 40px;
+    justify-content: space-between;
+    padding: 50px 40px;
+    margin: 0 auto;
 }
 
 .foto-principal img{
     width: 500px;
+    
 }
 
 .text-principal{
@@ -116,8 +125,8 @@ section.page1{
 }
 
 .text-principal h1{
-    min-width: 50vw;
-    max-width: 560px;
+    min-width: 560px;
+    max-width: 500px;
     color: var(--laranjaprincipal);
     font-size: 46px;
     font-weight: bold;
@@ -157,47 +166,321 @@ section.page1{
 
 /*------------CONTEINER-02------------*/
 
-section.page2{
+section.conteiner-02{
     height: 196px;
     background-color: var(--laranjaprincipal);
-    padding: 40px;
+}
+
+.page2{
+    max-width: 1600px;
+    height: 196px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
 }
 
 .seção1{
     min-width: 300px;
-    width: 30vw;
+    width: 375px;
     height: 139px;    
     display: flex;
     align-items: center;
-    justify-content: space-around;
     gap: .8rem;
 }
 
 .seção1 p{
     width: 260px;
     font-size: 19px;
-    color: var(--verdeprincipal);
+    color: var(--verdesecundario);
 }
 
 .seção2{
     min-width: 300px;
-    width: 30vw;
+    width: 375px;
     height: 139px;    
     display: flex;
     align-items: center;
-    justify-content: space-around;
     gap: .8rem;
 }
 
 .seção2 p{
     width: 260px;
     font-size: 19px;
-    color: var(--verdeprincipal);
+    color: var(--verdesecundario);
 }
 
+/*------------CONTEINER-03------------*/
 
+section.conteiner-03{
+    height: 790px;
+    background-image: url(logo/fundo\ antenas.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
 
+.page3{
+    max-width: 1600px;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+
+.texto-serviço h2{
+    height: 55px;
+    color: var(--laranjaprincipal);
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.texto-serviço .line{
+    height: 5px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: #0D8434;
+    margin: 0 auto;
+}
+
+.texto-serviço p{
+    width: 644px;
+    color: var(--verdeprincipal);
+    font-size: 19px;
+    text-align: center;
+    margin: 30px auto; 
+}
+
+.foto-infos{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tomada{
+    height: 180px;
+    background-color: var(--verdeprincipal);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    gap: 10px;
+    transition: .4s;
+}
+
+.tomada:hover{
+    box-shadow: 8px 8px 0px var(--laranjaprincipal);
+    transform: translate(-5px, -5px);
+}
+
+.tomada img{
+    width: 90px;
+    height: 90px;
+}
+
+.texto-tomada h3{
+    width: 297px;
+    color: var(--laranjaprincipal);
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.texto-tomada p{
+    width: 353px;
+    color: var(--laranjaprincipal);
+    font-size: 15px;
+}
+
+.consultoria{
+    height: 114px;
+    background-color: var(--verdeprincipal);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    gap: 10px;
+    transition: .4s;
+ }
+
+ .consultoria:hover{
+    box-shadow: 8px 8px 0px var(--laranjaprincipal);
+    transform: translate(-5px, -5px);
+ }
+
+ .texto-consultoria h3{
+    width: 265px;
+    color: var(--laranjaprincipal);
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+ .texto-consultoria p{
+    width: 353px;
+    color: var(--laranjaprincipal);
+    font-size: 15px;
+}
+
+.documento{
+    height: 138px;
+    background-color: var(--verdeprincipal);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    gap: 10px;
+    transition: .4s;
+ }
+
+ .documento:hover{
+    box-shadow: 8px 8px 0px var(--laranjaprincipal);
+    transform: translate(-5px, -5px);
+ }
+
+ .texto-documento h3{
+    width: 265px;
+    color: var(--laranjaprincipal);
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+ .texto-documento p{
+    width: 353px;
+    color: var(--laranjaprincipal);
+    font-size: 15px;
+}
+
+/*------------CONTEINER-04------------*/
+
+section.conteiner-04{
+    height: 414px;
+    background-color: var(--laranjaprincipal);
+}
+
+.page04{
+    max-width: 1600px;
+    height: 414px;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0;
+    margin: 0 auto;
+}
+
+.seção-valores{
+    width: 320px;
+}
+
+.seção-valores img{
+    border: 5px solid var(--verdesecundario);
+    border-radius: 50%;
+    padding: 8px;
+    margin: 0 90px;
+}
+
+.seção-valores h3{
+    color: var(--verdesecundario);
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.seção-valores p{
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 19;
+    color: var(--verdesecundario);
+}
+
+.line-02{
+    background-color: var(--verdesecundario);
+    width: 5px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.seção-missão{
+    width: 320px;
+}
+
+.seção-missão img{
+    border: 5px solid var(--verdesecundario);
+    border-radius: 50%;
+    padding: 8px;
+    margin: 0 90px;
+}
+
+.seção-missão h3{
+    color: var(--verdesecundario);
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.seção-missão p{
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 19;
+    color: var(--verdesecundario);
+}
+
+.line-03{
+    background-color: var(--verdesecundario);
+    width: 5px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.seção-visão{
+    width: 320px;
+}
+
+.foto-grafico{
+    border: 5px solid var(--verdesecundario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    width: 140px;
+    height: 135px;
+}
+
+.seção-visão img{
+    width: 145px;
+    padding: 20px;
+}
+
+.seção-visão h3{
+    color: var(--verdesecundario);
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.seção-visão p{
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 19;
+    color: var(--verdesecundario);
+}
