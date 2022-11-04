@@ -649,6 +649,15 @@ footer.conteiner-05{
     margin: 3px 0 10px 0;
 }
 
+.contato form input::placeholder{
+    color: var(--laranjaprincipal);
+}
+
+.contato form textarea::placeholder{
+    color: var(--laranjaprincipal);
+    padding: 14px 0;
+}
+
 .contato button{
     width: 273px;
     height: 46px;
@@ -667,3 +676,4 @@ footer.conteiner-05{
     transform: scale(1.1);
     box-shadow: 0 0 10px var(--laranjaprincipal);
 }
+
