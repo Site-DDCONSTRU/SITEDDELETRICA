@@ -460,7 +460,7 @@ section.conteiner-04{
     margin: 0 auto;
     margin-bottom: 8px;
     width: 140px;
-    height: 135px;
+    height: 140px;
 }
 
 .seção-visão img{
@@ -483,4 +483,187 @@ section.conteiner-04{
     text-align: center;
     font-size: 19;
     color: var(--verdesecundario);
+}
+
+/*------------CONTEINER-05------------*/
+
+footer.conteiner-05{
+    height: 338px;
+    background-color: var(--verdeprincipal);
+    display: flex;
+    align-items: center;
+    
+}
+
+.page05{
+    max-width: 1600px;
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sobre-nos{
+    width: 247px;
+    margin: 0 40px;
+}
+
+.sobre-nos h2{
+    color: white;
+    font-size: 28px;
+}
+
+.sobre-nos .line-04{
+    height: 5px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: var(--laranjaprincipal);
+    margin: 6px 0;
+}
+
+.sobre-nos p{
+    width: 208px;
+    margin: 15px 0;
+    color: white;
+}
+
+.redes-social{
+    width: 208px;
+    display: flex;
+    gap: 15px;
+
+}
+
+.redes-social img{
+    width: 50px;
+}
+
+.redes-social a#insta img{
+    width: 53.5px;
+}
+
+.endereço{
+    width: 270px;
+}
+
+.endereço h2{
+    color: white;
+    font-size: 28px;
+}
+
+.endereço .line-05{
+    height: 5px;
+    width: 105px;
+    border-radius: 10px;
+    background-color: var(--laranjaprincipal);
+    margin: 6px 0;
+}
+
+.localização{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.localização p{
+    color: white;
+    letter-spacing: 3px;
+}
+
+.telefone{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin: 15px 0;
+}
+
+.telefone p{
+    color: white;
+    letter-spacing: 3px;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.email p{
+    color: white;
+    letter-spacing: 3px;
+}
+
+.contato{
+    width: 273px;
+}
+
+.contato h2{
+    color: white;
+    font-size: 28px;
+}
+
+.contato .line-06{
+    height: 5px;
+    width: 105px;
+    border-radius: 10px;
+    background-color: var(--laranjaprincipal);
+    margin: 6px 0;
+}
+
+.contato form{
+    margin-top: 15px;
+}
+
+.contato label{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.contato input{
+    width: 273px;
+    height: 35px;
+    background-color: transparent;
+    border: 3px solid var(--laranjaprincipal);
+    border-radius: 10px;
+    color: var(--laranjaprincipal);
+    font-size: 16px;
+    outline: none;
+    padding: 8px;
+    margin: 3px 0 10px 0;
+}
+
+.contato textarea{
+    width: 273px;
+    height: 68px;
+    resize: none;
+    background-color: transparent;
+    border: 3px solid var(--laranjaprincipal);
+    border-radius: 10px;
+    color: var(--laranjaprincipal);
+    font-size: 16px;
+    outline: none;
+    padding: 8px;
+    margin: 3px 0 10px 0;
+}
+
+.contato button{
+    width: 273px;
+    height: 46px;
+    background-color: var(--laranjaprincipal);
+    border: none;
+    border-radius: 10px;
+    color: var(--verdeprincipal);
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.contato button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--laranjaprincipal);
 }
