@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-02.css">
+    <title>Faça seu orçamento</title>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo/logo.png" alt="logo">
+    </div>
+
+    <nav>
+        <a href="index.html">Voltar</a>
+    </nav>
+</header>
+    
+<main>
+    <div class="foto-principal">
+        <img src="foto/wallpaper-formulario 1.png" alt="foto eletricistas">
+    </div>
+
+    <form action="" method="post" autocomplete="off">
+        <h1>
+            faça aqui seu orçamento.
+        </h1>
+
+        <div class="ns">
+            <div class="nome">
+                <label for="iname">
+                    nome:
+                </label><br>
+                <input type="text" name="name" id="iname" placeholder="Digite seu nome"><br>
+            </div>
+            <div class="sobre">
+                <label for="isobre">
+                    sobrenome:
+                </label><br>
+                <input type="text" name="sobre" id="isobre" placeholder="Digite seu sobrenome"><br>
+            </div>
+        </div>
+    
+        <div class="cs">
+            <div class="contato">
+                <label for="icont">
+                    contato:
+                </label><br>
+                <input type="tel" name="cont" id="icont" placeholder="(xx) xxxxx-xxxx"><br>
+            </div>
+            <div class="servicos">
+                <label for="iser">
+                    tipo de serviços:
+                </label><br>
+                <select name="serv" id="iserve" >
+                    <option selected>-- Escolha seu serviço --</option>
+                        <optgroup label="serviços:">
+                            <option>Manutenção</option>
+                            <option>Instalação</option>
+                            <option>Consultoria</option>
+                        </optgroup>
+                </select><br>
+            </div>
+        </div>
+    
+        <div class="mensagem">
+            <label for="imen">mensagem:</label><br>
+            <textarea name="mens" id="imens" cols="30" rows="10" placeholder="Digite aqui"></textarea>
+        </div>
+        
+        <button type="submit">
+            ENVIAR ORÇAMENTO
+        </button>
+</form>
+</main>
+
+</body>
+</html>
